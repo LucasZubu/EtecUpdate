@@ -1,0 +1,7 @@
+{
+  "name": "EtecUpdate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
