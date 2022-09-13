@@ -9,7 +9,7 @@
 
 <ion-content [fullscreen]="true" color="branco">
 
-  <ion-grid fixed>
+  <ion-grid >
     
       <ion-row size="10" class="ion-justify-content-center">
         
@@ -17,42 +17,63 @@
 
 
 
-              <ion-grid>
-
-                <ion-row class="ion-justify-content-start">
+          <ion-item color="branco" class="selecao">   
+            <ion-grid>
+              
+              <ion-row size="10" class="ion-justify-content-start">
 
                   <ion-col size="12">
                     <div><ion-icon name="time-outline" color="vermelhoetec"></ion-icon></div>
                   </ion-col>
-                </ion-row>
-              </ion-grid>
+
+              </ion-row>
+           
              
 
-              <ion-row size="6" >
+              <ion-row size="2" >
 
                 <ion-col size="12">
                   <div>          
-                    <ion-item>
-                      <ion-label>Comment</ion-label>
-                      <ion-textarea clearOnEdit="true"></ion-textarea>
+                    <ion-item color="vermelhoetec"  button (click)="mostrarToast">
+                      <ion-label>
+                        Horarios 
+                      </ion-label>
                     </ion-item>
                   </div>  
                 </ion-col>  
               
               </ion-row> 
-
-
+            </ion-grid>
+          </ion-item>    
         </ion-col>
 
         <ion-col size="6">
+          <ion-item color="branco" class="selecao"> 
+            <ion-grid>
 
-          <ion-grid>
-            <ion-row class="ion-justify-content-start">
-              <ion-col size="12">
-                <div><ion-icon name="newspaper-outline" color="vermelhoetec"></ion-icon></div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+              <ion-row  size="10" class="ion-justify-content-start">
+
+                <ion-col size="12">
+                  <div><ion-icon name="newspaper-outline" color="vermelhoetec"></ion-icon></div>
+                </ion-col>
+
+              </ion-row>
+
+              <ion-row size="2" >
+
+                <ion-col size="12">
+                  <div>          
+                    <ion-item color="branco">
+                      <ion-label>Comment</ion-label>
+                    </ion-item>
+                  </div>  
+                </ion-col>  
+              
+              </ion-row>
+
+            </ion-grid>
+
+          </ion-item>
           
         </ion-col>
       </ion-row>
