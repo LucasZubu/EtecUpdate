@@ -8,10 +8,10 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage{
-  constructor(private mostrarToast: ToastController) { }
+  constructor(private msg: ToastController) {}
 
   async presentToast() {
-    const toast = await this.mostrarToast.create({
+    const toast = await this.msg.create({
       message: 'Hello World!',
       duration: 1500,
       icon: 'globe'
@@ -19,5 +19,5 @@ export class FolderPage{
 
     await toast.present();
   }
-
 }
+
