@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ToastController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-folder',
@@ -8,16 +8,35 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage{
-  constructor(private msg: ToastController) {}
 
-  async presentToast() {
-    const toast = await this.msg.create({
-      message: 'Hello World!',
-      duration: 1500,
-      icon: 'globe'
+  mensagem='';
+  textDigitado='';
+
+  constructor(private alertController: AlertController) {}
+
+  async msg() {
+    const alert = await this.alertController.create({
+      header: 'Alert',
+      message: 'This is an <strong>alert</strong>!',
+      buttons:  [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            this.mensagem = 'Alerta Cancelado';
+          },
+        },
+        {
+          text: 'Sim, Por Favor',
+          role: 'confirm',
+          handler: () => {
+            this.mensagem = 'Alerta Confirmado';
+          },
+        },
+      ],
     });
 
-    await toast.present();
+    await alert.present();
   }
 }
 
