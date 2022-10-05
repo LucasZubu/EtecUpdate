@@ -3,123 +3,98 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title size="large  " >SIGA</ion-title>
+    <ion-title size="large" slot="end">SIGA</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="branco">
 
-  <ion-grid >
-    
-      <ion-row size="10" class="ion-justify-content-center">
-        
-        <ion-col size="6">
+  <ion-grid>
 
+    <ion-row size="10" class="ion-justify-content-center">
 
+      <ion-col size="6">
+        <ion-item color="branco" class="selecao" button>
+          <ion-grid class="centro">
+            <ion-row class="ion-justify-content-start">
+              <ion-col size="12">
+                <div class="container">
+                  <ion-icon name="time-outline" color="vermelhoetec"></ion-icon>
+                </div>
 
-          <ion-item color="branco" class="selecao">   
-            <ion-grid>
-              
-              <ion-row size="10" class="ion-justify-content-start">
+                <ion-item color="branco" class="box">
+                  <ion-label>Horarios</ion-label>
+                </ion-item>
 
-                  <ion-col size="12">
-                    <div><ion-icon name="time-outline" color="vermelhoetec"></ion-icon></div>
-                  </ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-col>
 
-              </ion-row>
-           
-             
+      <ion-col size="6">
+        <ion-item color="branco" class="selecao" button>
+          <ion-grid class="centro">
+            <ion-row class="ion-justify-content-start">
+              <ion-col size="12">
+                <div class="container">
+                  <ion-icon name="newspaper-outline" color="vermelhoetec"></ion-icon>
+                </div>
 
-              <ion-row size="2" >
+                <ion-item color="branco" class="box">
+                  <ion-label>Secretária</ion-label>
+                </ion-item>
 
-                <ion-col size="12">
-                  <div>          
-                    <ion-item color="vermelhoetec"  button (click)="msg()">
-                      <ion-label>
-                        Horarios 
-                      </ion-label>
-                    </ion-item>
-                  </div>  
-                </ion-col>  
-              
-              </ion-row> 
-            </ion-grid>
-          </ion-item>    
-        </ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item> 
+      </ion-col>
+    </ion-row>
 
-        <ion-col size="6">
-          <ion-item color="branco" class="selecao"> 
-            <ion-grid>
-
-              <ion-row  size="10" class="ion-justify-content-start">
-
-                <ion-col size="12">
-                  <div><ion-icon name="newspaper-outline" color="vermelhoetec"></ion-icon></div>
-                </ion-col>
-
-              </ion-row>
-
-              <ion-row size="2" >
-
-                <ion-col size="12">
-                  <div>          
-                    <ion-item color="branco">
-                      <ion-label>Comment</ion-label>
-                    </ion-item>
-                  </div>  
-                </ion-col>  
-              
-              </ion-row>
-
-            </ion-grid>
-
-          </ion-item>
-          
-        </ion-col>
-      </ion-row>
-     
-    <!--Primeira parte -->
 
     <ion-row size="10" class="ion-justify-content-center">
       <ion-col size="6">
+        <ion-item color="branco" class="selecao" button>
+          <ion-grid class="centro">
+            <ion-row class="ion-justify-content-start">
+              <ion-col size="12">
+                <div class="container">
+                  <ion-icon name="book-outline" color="vermelhoetec"></ion-icon>
+                </div>
 
-        <ion-grid>
-          <ion-row class="ion-justify-content-start">
-            <ion-col size="12">
-              <div><ion-icon name="book-outline" color="vermelhoetec"></ion-icon></div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+                <ion-item color="branco" class="box">
+                  <ion-label>Academica</ion-label>
+                </ion-item>
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
 
       </ion-col>
 
       <ion-col size="6">
+        <ion-item color="branco" class="selecao" button>
+          <ion-grid class="centro">
+            <ion-row class="ion-justify-content-start">
+              <ion-col size="12">
+                <div class="container">
+                  <ion-icon name="close-circle-outline" color="vermelhoetec"></ion-icon>
+                </div>
 
-        <ion-grid>
-          <ion-row class="ion-justify-content-start">
-            <ion-col size="12">
-              <div><ion-icon name="close-circle-outline" color="vermelhoetec"></ion-icon></div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-        
+                <ion-item color="branco" class="box">
+                  <ion-label>Faltas</ion-label>
+                </ion-item>
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
       </ion-col>
     </ion-row>
 
-    <ion-row size="2" class="ion-justify-content-center">
-      <ion-col size="6">
-        <div>
-          <ion-label>Ficha de Desempenho</ion-label>
-        </div>
-      </ion-col>
-      <ion-col size="6">
-          <ion-label>Vida Academica</ion-label>
-      </ion-col>
-    </ion-row>
-    <!--Segunda parte -->
-
-
+    <!--Primeira parte -->
 
   </ion-grid>
-  <b>Mensagem:  </b> {{mensagem}}
 </ion-content>
